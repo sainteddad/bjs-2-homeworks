@@ -9,7 +9,7 @@ function Student(name, gender, age) {
 
 
 let student1 = new Student ("Antony", "Male", 21);
- 
+    
 let student2 = new Student ("Rose", "Female", 20);
 
 Student.prototype.setSubject = function (subjectName) {
@@ -18,7 +18,9 @@ Student.prototype.setSubject = function (subjectName) {
 }
 
 Student.prototype.addMarks = function (...marks) {
-    this.marks[4, 5, 4, 5] = marks;
+    [this.marks = 5, ...marks]; 
+    
+
     
     
     
